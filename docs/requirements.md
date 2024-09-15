@@ -18,7 +18,7 @@
 Po zadání IP adresy se zobrazí přihlašovací stránka aplikace.
 
 #### REQ_0002
-Aplikace ******musí****** umožnit uživatelům vytvořit nový účet zadáním unikátního uživatelského jména, přihlašovacího jména a hesla.
+Aplikace ***musí*** umožnit uživatelům vytvořit nový účet zadáním unikátního uživatelského jména, přihlašovacího jména a hesla.
 
 #### REQ_0003
 Aplikace ***musí*** vyžadovat potvrzení hesla zadáním hesla podruhé během procesu registrace.
@@ -135,7 +135,7 @@ Tlačítko „Smazat změny“ (Discard Changes) ***musí*** být viditelné na 
 
 
 #### REQ_0035
-Aplikace ***musí*** umožnit uživatelům se statusem Administrator vytvářet zálohy svých soukromých chatových a profilových dat ve formátu JSON.
+Aplikace ***musí*** umožnit uživatelům se statusem Administrator vytvářet zálohy svých soukromých, veřejných chatových a profilových dat ve formátu JSON.
 
 #### REQ_0036
 Záloha ***musí*** obsahovat soukromé a veřejné konverzace, profilová data a možnosti umístění zálohy (lokálně nebo v cloudu).
@@ -145,6 +145,3 @@ Uživatelé ***musí*** mít možnost obnovit data ze zálohy.
 
 #### REQ_0038
 Pokud je soubor zálohy poškozený nebo ve špatném formátu, aplikace ***musí*** zobrazit chybovou zprávu „Neplatný formát souboru zálohy“.
-
-#### REQ_0039
-Po úspěšném obnovení aplikace informuje uživatele o potvrzení „Záloha byla úspěšně obnovena“.
