@@ -27,7 +27,7 @@ Aplikace ***musí*** vyžadovat potvrzení hesla zadáním hesla podruhé během
 Aplikace ***musí*** zajistit, že hesla splňují základní pravidla zabezpečení a poskytne uživatelům informace o těchto pravidlech při prvním přihlášení.
 
 #### REQ_0005
-Po vyplnění všech požadovaných údajů ***musí*** být k dispozici tlačítko „Registrovat“.
+Pro úspěšnou registraci ***musí*** být vyplněna všechny pole registračního formuláře
 
 ### Fáze přihlášení
 
@@ -37,9 +37,6 @@ Aplikace ***musí*** umožnit uživatelům přihlásit se pomocí uživatelskéh
 
 #### REQ_0007
 Pokud jsou přihlašovací údaje neplatné, aplikace ***musí*** zobrazit chybovou zprávu „Neplatné uživatelské jméno nebo heslo“.
-
-#### REQ_0008
-Po pěti chybných pokusech o přihlášení během jedné minuty ***musí*** být uživateli na jednu minutu znemožněno zadávat heslo.
 
 #### REQ_0009
 Uživatelé ***musí*** mít možnost zahájit proces resetování hesla prostřednictvím odkazu „Zapomenuté heslo“, který spustí resetování prostřednictvím e-mailu.
@@ -78,7 +75,7 @@ Tlačítko „Poslat“ ***musí*** být aktivní pouze tehdy, když je v textov
 
 
 #### REQ_0018
-Aplikace ***musí*** zobrazovat seznam uživatelů, se kterými osoba komunikovala, s možností zahájit nové konverzace.
+Aplikace ***musí*** zobrazovat seznam uživatelů, se kterými osoba komunikovala
 
 #### REQ_0019
 Aplikace ***musí*** umožnit uživatelům přidávat další uživatele do seznamu pro zahájení soukromé komunikace.
