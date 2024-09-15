@@ -1,13 +1,13 @@
 # Obsah
 
 1. [Přístup a autentizace aplikace](#1-přístup-a-autentizace-aplikace)
-   - [Fáze tvorby účtu/prvního přihlášení](#11-fáze-tvorby-účtu-prvního-přihlášení)
-   - [Fáze přihlášení](#12-fáze-přihlášení)
-   - [Proces odhlášení](#13-proces-odhlášení)
+   - [Fáze tvorby účtu/prvního přihlášení](#fáze-tvorby-účtu-prvního-přihlášení)
+   - [Fáze přihlášení](#fáze-přihlášení)
+   - [Proces odhlášení](#proces-odhlášení)
 2. [Veřejný chat](#2-veřejný-chat)
 3. [Soukromý chat](#3-soukromý-chat)
 4. [Nastavení uživatele](#4-nastavení-uživatele)
-   - [Zálohování a obnovení profilu](#41-zálohování-a-obnovení-profilu)
+   - [Zálohování a obnovení profilu](#zálohování-a-obnovení-profilu)
 
 ## 1. Přístup a autentizace aplikace
 
@@ -131,7 +131,7 @@ Kliknutím na tlačítko „Uložit“ ***musí*** být všechny změny uloženy
 #### REQ_0034
 Tlačítko „Smazat změny“ (Discard Changes) ***musí*** být viditelné na stránce profilu a umožnit uživatelům zrušit neuložené změny. Po kliknutí na tlačítko „Smazat“ ***musí*** být všechny neuložené změny vráceny na poslední uložený stav.
 
-### 4.1 Zálohování a obnovení profilu
+### Zálohování a obnovení profilu
 
 
 #### REQ_0035
