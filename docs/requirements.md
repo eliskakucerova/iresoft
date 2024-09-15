@@ -27,7 +27,7 @@ Aplikace ***musí*** vyžadovat potvrzení hesla zadáním hesla podruhé během
 Aplikace ***musí*** zajistit, že hesla splňují základní pravidla zabezpečení a poskytne uživatelům informace o těchto pravidlech při prvním přihlášení.
 
 #### REQ_0005
-Pro úspěšnou registraci ***musí*** být vyplněna všechny pole registračního formuláře
+Pro úspěšnou registraci ***musí*** být vyplněna všechna pole registračního formuláře
 
 ### Fáze přihlášení
 
