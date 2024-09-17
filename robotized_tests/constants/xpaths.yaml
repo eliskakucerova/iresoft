@@ -1,0 +1,6 @@
+LOGIN_PAGE_HEADER_TEXT:  xpath:/html/body/div/div/div/div/main/div[2]/form/h1
+LOGIN_PAGE_HANDLENAME_INPUT:  xpath:/html/body/div/div/div/div/main/div[2]/form/div[1]/input
+LOGIN_PAGE_PASSWORD_INPUT:  xpath:/html/body/div/div/div/div/main/div[2]/form/div[2]/input
+LOGIN_PAGE_LOGIN_BUTTON: xpath:/html/body/div/div/div/div/main/div[2]/form/button
+
+PUBLIC_CHAT_PAGE_CONFIRMATION_MSG: xpath:/html/body/div/div/div/div/main/div[2]/div/div[1]/div/div/div[2]/div[2]
