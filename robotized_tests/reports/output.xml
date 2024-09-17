@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.12.6 on win32)" generated="20240917 14:16:13.856" rpa="true" schemaversion="4">
+<suite id="s1" name="Test 0007" source="C:\Projects\iresoft\robotized_tests\tests\test_0007.robot">
+<test id="s1-t1" name="test_0007" line="19">
+<kw name="Generic test setup" library="setup_teardown" type="SETUP">
+<kw name="Get Current Date" library="DateTime">
+<var>${date}</var>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<msg timestamp="20240917 14:16:14.328" level="INFO">${date} = 2024-09-17 14:16:14.327</msg>
+<status status="PASS" starttime="20240917 14:16:14.327" endtime="20240917 14:16:14.328"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Start:${date}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20240917 14:16:14.328" endtime="20240917 14:16:14.328"/>
+</kw>
+<status status="PASS" starttime="20240917 14:16:14.327" endtime="20240917 14:16:14.328"/>
+</kw>
+<kw name="Browser OPEN in (Chrome) with (${HTTPS_URL})" library="browser" sourcename="Browser OPEN in (${type_of_browser}) with (${webserver_endpoint})">
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>10</arg>
+<arg>0.2</arg>
+<arg>Open Browser</arg>
+<arg>${webserver_endpoint}</arg>
+<arg>${type_of_browser}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${webserver_endpoint}</arg>
+<arg>${type_of_browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240917 14:16:14.331" level="INFO">Opening browser 'Chrome' to base url 'https://a2dev.iresoft.cz:9130/IreChatTester'.</msg>
+<status status="PASS" starttime="20240917 14:16:14.330" endtime="20240917 14:16:17.869"/>
+</kw>
+<status status="PASS" starttime="20240917 14:16:14.330" endtime="20240917 14:16:17.869"/>
+</kw>
+<status status="PASS" starttime="20240917 14:16:14.329" endtime="20240917 14:16:17.870"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240917 14:16:22.872" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20240917 14:16:17.870" endtime="20240917 14:16:22.875"/>
+</kw>
+<kw name="IS Login page (${LOGIN_URL}) location loaded correctly?" library="login" sourcename="IS Login page (${url}) location loaded correctly?">
+<kw name="Is (${url}) location loaded correctly?" library="general_key" sourcename="Is (${url}) location loaded correctly?">
+<kw name="Wait Until Location Contains" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>20</arg>
+<doc>Waits until the current URL contains ``expected``.</doc>
+<status status="PASS" starttime="20240917 14:16:22.880" endtime="20240917 14:16:22.919"/>
+</kw>
+<status status="PASS" starttime="20240917 14:16:22.878" endtime="20240917 14:16:22.919"/>
+</kw>
+<status status="PASS" starttime="20240917 14:16:22.877" endtime="20240917 14:16:22.919"/>
+</kw>
+<kw name="IS Login page (visible)?" library="login" sourcename="IS Login page (${visible/invisible})?">
+<arg>${LOGIN_PAGE_HEADER_TEXT}</arg>
+<kw name="Is webelement (${visible/invisible})?" library="general_key" sourcename="Is webelement (${visible/invible})?">
+<arg>${locator}</arg>
+<if>
+<branch type="IF" condition="'${visible/invible}' == 'visible'">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20240917 14:16:22.930" endtime="20240917 14:16:22.959"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>20</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240917 14:16:22.959" endtime="20240917 14:16:22.986"/>
+</kw>
+<status status="PASS" starttime="20240917 14:16:22.929" endtime="20240917 14:16:22.986"/>
+</branch>
+<branch type="ELSE IF" condition="'${visible/invible}' == 'invisible'">
+<kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>20</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="NOT RUN" starttime="20240917 14:16:22.987" endtime="20240917 14:16:22.987"/>
+</kw>
+<status status="NOT RUN" starttime="20240917 14:16:22.987" endtime="20240917 14:16:22.987"/>
+</branch>
+<status status="PASS" starttime="20240917 14:16:22.929" endtime="20240917 14:16:22.987"/>
+</if>
+<status status="PASS" starttime="20240917 14:16:22.928" endtime="20240917 14:16:22.987"/>
+</kw>
+<status status="PASS" starttime="20240917 14:16:22.924" endtime="20240917 14:16:22.987"/>
+</kw>
+<kw name="IS Login page &quot;Handle name&quot; input field (visible)?" library="login" sourcename="IS Login page &quot;Handle name&quot; input field (${visible/invisible})?">
+<arg>${LOGIN_PAGE_HANDLENAME_INPUT}</arg>
+<kw name="Is webelement (${visible/invisible})?" library="general_key" sourcename="Is webelement (${visible/invible})?">
+<arg>${locator}</arg>
+<if>
+<branch type="IF" condition="'${visible/invible}' == 'visible'">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20240917 14:16:22.990" endtime="20240917 14:16:23.006"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>20</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240917 14:16:23.007" endtime="20240917 14:16:23.033"/>
+</kw>
+<status status="PASS" starttime="20240917 14:16:22.990" endtime="20240917 14:16:23.033"/>
+</branch>
+<branch type="ELSE IF" condition="'${visible/invible}' == 'invisible'">
+<kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>20</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="NOT RUN" starttime="20240917 14:16:23.033" endtime="20240917 14:16:23.033"/>
+</kw>
+<status status="NOT RUN" starttime="20240917 14:16:23.033" endtime="20240917 14:16:23.033"/>
+</branch>
+<status status="PASS" starttime="20240917 14:16:22.990" endtime="20240917 14:16:23.033"/>
+</if>
+<status status="PASS" starttime="20240917 14:16:22.989" endtime="20240917 14:16:23.033"/>
+</kw>
+<status status="PASS" starttime="20240917 14:16:22.988" endtime="20240917 14:16:23.033"/>
+</kw>
+<kw name="IS Login page &quot;Password&quot; input field (visible)?" library="login" sourcename="IS Login page &quot;Password&quot; input field (${visible/invisible})?">
+<arg>${LOGIN_PAGE_PASSWORD_INPUT}</arg>
+<kw name="Is webelement (${visible/invisible})?" library="general_key" sourcename="Is webelement (${visible/invible})?">
+<arg>${locator}</arg>
+<if>
+<branch type="IF" condition="'${visible/invible}' == 'visible'">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20240917 14:16:23.035" endtime="20240917 14:16:23.052"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>20</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240917 14:16:23.053" endtime="20240917 14:16:23.076"/>
+</kw>
+<status status="PASS" starttime="20240917 14:16:23.035" endtime="20240917 14:16:23.076"/>
+</branch>
+<branch type="ELSE IF" condition="'${visible/invible}' == 'invisible'">
+<kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>20</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="NOT RUN" starttime="20240917 14:16:23.076" endtime="20240917 14:16:23.076"/>
+</kw>
+<status status="NOT RUN" starttime="20240917 14:16:23.076" endtime="20240917 14:16:23.076"/>
+</branch>
+<status status="PASS" starttime="20240917 14:16:23.035" endtime="20240917 14:16:23.076"/>
+</if>
+<status status="PASS" starttime="20240917 14:16:23.034" endtime="20240917 14:16:23.077"/>
+</kw>
+<status status="PASS" starttime="20240917 14:16:23.034" endtime="20240917 14:16:23.077"/>
+</kw>
+<kw name="Login page &quot;Handle name&quot; input field INSERT (${VALID_USERNAME})" library="login" sourcename="Login page &quot;Handle name&quot; input field INSERT (${username})">
+<arg>${LOGIN_PAGE_HANDLENAME_INPUT}</arg>
+<kw name="Insert text into input and verify" library="general_key">
+<arg>${locator}</arg>
+<arg>${username}</arg>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20240917 14:16:23.078" endtime="20240917 14:16:23.112"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${ver_text}</arg>
+<arg>True</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240917 14:16:23.113" level="INFO">Typing text 'admin' into text field 'xpath:/html/body/div/div/div/div/main/div[2]/form/div[1]/input'.</msg>
+<status status="PASS" starttime="20240917 14:16:23.112" endtime="20240917 14:16:23.247"/>
+</kw>
+<kw name="Get Value" library="SeleniumLibrary">
+<var>${text}</var>
+<arg>${locator}</arg>
+<doc>Returns the value attribute of the element identified by ``locator``.</doc>
+<msg timestamp="20240917 14:16:23.271" level="INFO">${text} = admin</msg>
+<status status="PASS" starttime="20240917 14:16:23.247" endtime="20240917 14:16:23.271"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${text}</arg>
+<arg>${ver_text}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20240917 14:16:23.271" endtime="20240917 14:16:23.271"/>
+</kw>
+<status status="PASS" starttime="20240917 14:16:23.078" endtime="20240917 14:16:23.271"/>
+</kw>
+<status status="PASS" starttime="20240917 14:16:23.077" endtime="20240917 14:16:23.271"/>
+</kw>
+<kw name="Login page &quot;Password&quot; input field INSERT (${VALID_PASSWORD})" library="login" sourcename="Login page &quot;Password&quot; input field INSERT (${password})">
+<arg>${LOGIN_PAGE_PASSWORD_INPUT}</arg>
+<kw name="Insert password into input and verify" library="general_key">
+<arg>${locator}</arg>
+<arg>${password}</arg>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20240917 14:16:23.271" endtime="20240917 14:16:23.314"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${ver_text}</arg>
+<arg>True</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20240917 14:16:23.315" level="INFO">Typing password into text field 'xpath:/html/body/div/div/div/div/main/div[2]/form/div[2]/input'.</msg>
+<msg timestamp="20240917 14:16:23.361" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20240917 14:16:23.436" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20240917 14:16:23.315" endtime="20240917 14:16:23.436"/>
+</kw>
+<kw name="Get Value" library="SeleniumLibrary">
+<var>${text}</var>
+<arg>${locator}</arg>
+<doc>Returns the value attribute of the element identified by ``locator``.</doc>
+<msg timestamp="20240917 14:16:23.454" level="INFO">${text} = irechatadmin</msg>
+<status status="PASS" starttime="20240917 14:16:23.436" endtime="20240917 14:16:23.454"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${text}</arg>
+<arg>${ver_text}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20240917 14:16:23.454" endtime="20240917 14:16:23.454"/>
+</kw>
+<status status="PASS" starttime="20240917 14:16:23.271" endtime="20240917 14:16:23.454"/>
+</kw>
+<status status="PASS" starttime="20240917 14:16:23.271" endtime="20240917 14:16:23.454"/>
+</kw>
+<kw name="IS Login page &quot;Login&quot; button (enable)?" library="login" sourcename="IS Login page &quot;Login&quot; button (${enable/disable})?">
+<arg>${LOGIN_PAGE_LOGIN_BUTTON}</arg>
+<kw name="Is element (${enable/disable})?" library="general_key" sourcename="Is element (${enable/disable})?">
+<arg>${locator}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240917 14:16:23.454" endtime="20240917 14:16:23.488"/>
+</kw>
+<if>
+<branch type="IF" condition="'${enable/disable}' == 'enable'">
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>20</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20240917 14:16:23.488" endtime="20240917 14:16:23.523"/>
+</kw>
+<status status="PASS" starttime="20240917 14:16:23.488" endtime="20240917 14:16:23.523"/>
+</branch>
+<branch type="ELSE IF" condition="'${enable/disable}' == 'disable'">
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>5</arg>
+<arg>0.2</arg>
+<arg>Element Should Be Disabled</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="NOT RUN" starttime="20240917 14:16:23.523" endtime="20240917 14:16:23.523"/>
+</kw>
+<status status="NOT RUN" starttime="20240917 14:16:23.523" endtime="20240917 14:16:23.523"/>
+</branch>
+<status status="PASS" starttime="20240917 14:16:23.488" endtime="20240917 14:16:23.524"/>
+</if>
+<status status="PASS" starttime="20240917 14:16:23.454" endtime="20240917 14:16:23.524"/>
+</kw>
+<status status="PASS" starttime="20240917 14:16:23.454" endtime="20240917 14:16:23.524"/>
+</kw>
+<kw name="Login page &quot;Login&quot; button CLICK on" library="login">
+<arg>${LOGIN_PAGE_LOGIN_BUTTON}</arg>
+<kw name="Click on button" library="general_key">
+<arg>${locator}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240917 14:16:23.525" endtime="20240917 14:16:23.544"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>10</arg>
+<arg>0.2</arg>
+<arg>Click Button</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20240917 14:16:23.546" level="INFO">Clicking button 'xpath:/html/body/div/div/div/div/main/div[2]/form/button'.</msg>
+<status status="PASS" starttime="20240917 14:16:23.545" endtime="20240917 14:16:24.349"/>
+</kw>
+<status status="PASS" starttime="20240917 14:16:23.545" endtime="20240917 14:16:24.349"/>
+</kw>
+<status status="PASS" starttime="20240917 14:16:23.525" endtime="20240917 14:16:24.349"/>
+</kw>
+<status status="PASS" starttime="20240917 14:16:23.524" endtime="20240917 14:16:24.349"/>
+</kw>
+<kw name="IS (${PUBLIC_CHAT_URL}) page location loaded correctly from (${LOGIN_URL}) page?" library="general_key" sourcename="IS (${curr_url}) page location loaded correctly from (${prev_url}) page?">
+<kw name="Wait Until Location Is Not" library="SeleniumLibrary">
+<arg>${prev_url}</arg>
+<arg>20</arg>
+<doc>Waits until the current URL is not ``location``.</doc>
+<status status="PASS" starttime="20240917 14:16:24.350" endtime="20240917 14:16:24.351"/>
+</kw>
+<kw name="Wait Until Location Is" library="SeleniumLibrary">
+<arg>${curr_url}</arg>
+<arg>10</arg>
+<doc>Waits until the current URL is ``expected``.</doc>
+<status status="PASS" starttime="20240917 14:16:24.351" endtime="20240917 14:16:24.373"/>
+</kw>
+<status status="PASS" starttime="20240917 14:16:24.350" endtime="20240917 14:16:24.373"/>
+</kw>
+<kw name="IS Public chat loaded correctly?" library="public_chat">
+<arg>${PUBLIC_CHAT_PAGE_CONFIRMATION_MSG}</arg>
+<kw name="IS connection to chat set up succesfully?" library="general_key">
+<arg>${locator}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240917 14:16:24.378" endtime="20240917 14:16:24.643"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${message}</var>
+<arg>${locator}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20240917 14:16:24.666" level="INFO">${message} = Successfully connected.</msg>
+<status status="PASS" starttime="20240917 14:16:24.643" endtime="20240917 14:16:24.666"/>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<arg>${message}</arg>
+<arg>Successfully connected.</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" starttime="20240917 14:16:24.666" endtime="20240917 14:16:24.666"/>
+</kw>
+<status status="PASS" starttime="20240917 14:16:24.378" endtime="20240917 14:16:24.666"/>
+</kw>
+<status status="PASS" starttime="20240917 14:16:24.377" endtime="20240917 14:16:24.666"/>
+</kw>
+<kw name="Generic test teardown" library="setup_teardown" type="TEARDOWN">
+<kw name="Log To Console" library="BuiltIn">
+<arg>End</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20240917 14:16:24.666" endtime="20240917 14:16:24.666"/>
+</kw>
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20240917 14:16:24.666" endtime="20240917 14:16:32.325"/>
+</kw>
+<status status="PASS" starttime="20240917 14:16:24.666" endtime="20240917 14:16:32.325"/>
+</kw>
+<status status="PASS" starttime="20240917 14:16:14.326" endtime="20240917 14:16:32.325"/>
+</test>
+<doc>Succesfull connection from login page into chat application, username and password valid</doc>
+<meta name="Requirements">https://github.com/eliskakucerova/iresoft/blob/main/docs/requirements.md#req_0006</meta>
+<status status="PASS" starttime="20240917 14:16:13.856" endtime="20240917 14:16:32.325"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tasks</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Test 0007">Test 0007</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
