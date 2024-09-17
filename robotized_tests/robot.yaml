@@ -1,0 +1,25 @@
+condaConfigFile: conda.yaml
+
+environmentConfigs:
+  - conda.yaml
+
+artifactsDir: reports
+
+PATH:
+  - .
+
+PYTHONPATH:
+  - .
+  - resources
+  - libraries
+  - tests
+  - constants
+  - variables
+
+ignoreFiles:
+  - .gitignore
+
+tasks:
+
+  test_0007:
+    shell: robot tests\test_0007.robot

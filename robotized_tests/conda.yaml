@@ -1,0 +1,11 @@
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - pip=23.3
+  - pip:
+    - robotframework==6.1.1
+    - robotframework-seleniumlibrary
+    - unidecode
+    - rpaframework
+    - PyYAML==6.0.2
