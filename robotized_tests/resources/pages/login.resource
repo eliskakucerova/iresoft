@@ -1,8 +1,8 @@
 *** Settings ***
-Documentation
+Documentation       Operations related to login page
 
-Library    SeleniumLibrary
-Resource    ../general/general_key.resource
+Library             SeleniumLibrary
+Resource            general/general_key.resource
 
 
 *** Keywords ***
@@ -36,4 +36,3 @@ Login page "Login" button CLICK on
 
 IS Login page (${url}) location loaded correctly?
     Is (${url}) location loaded correctly?
-    

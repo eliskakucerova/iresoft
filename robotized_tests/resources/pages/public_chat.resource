@@ -1,8 +1,9 @@
 *** Settings ***
-Documentation
+Documentation       Operations related to public chat page
 
-Library    SeleniumLibrary
-Resource    ../general/general_key.resource
+Library             SeleniumLibrary
+Resource            general/general_key.resource
+
 
 *** Keywords ***
 IS Public chat loaded correctly?

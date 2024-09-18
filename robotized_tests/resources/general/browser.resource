@@ -1,6 +1,8 @@
 *** Settings ***
-Documentation
-Library    SeleniumLibrary
+Documentation       Operations related to browser
+
+Library             SeleniumLibrary
+
 
 *** Keywords ***
 Browser OPEN in (${type_of_browser}) with (${webserver_endpoint})

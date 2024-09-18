@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation
+Documentation    General keywords
 
 Library    SeleniumLibrary
 
