@@ -22,4 +22,4 @@ ignoreFiles:
 tasks:
 
   test_0007:
-    shell: robot tests\test_0007.robot
+    shell: robot tests\\__init__.robot tests\\test_0007.robot
