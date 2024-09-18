@@ -17,7 +17,7 @@ Výsledkem by měl být:
 
 - Dokumentace, z dokumentace jsou následně zvořeny požadavky. Oba tyto dokumnety jsou tvořeny v markadownfilu
 
-- Požadavky, z požadavjků jsou následně tvořeny testovací scénáře, pod testovacím snénářem prosím rzoumějte test. Požadavky jsou do testovacích scénářů prolinkovány, takže je možné implementovat tracebility, schopnost sledovat pokrytí požadavku testu.
+- Požadavky, z požadavků jsou následně tvořeny testovací scénáře, pod testovacím snénářem prosím rozumějte test. Požadavky jsou do testovacích scénářů prolinkovány, takže je možné implementovat tracebility (schopnost sledovat pokrytí požadavku testu).
 
 
 - Efektivní pokrytí
@@ -26,15 +26,26 @@ Výsledkem by měl být:
 
 Vemte prosím na vědomí, že pro tento úkol byla s ohledem na čas vytvořena pouze základní, obecná dokumnetace a požadavky, které plně neprokývají celý rozsah nároků na jednotlivé komponenty a funkčnost mezi nimi, stejně jako neočekávané situace.
 
-## Testovací
+## Testovací fáze
+Ukázka automatizace testů
 
+- Každý test ***musí*** mít aspoň jeden odkaz na požadavek nebo bug.
+- Každý test ***musí*** mít aspoň jeden tag.
 
+Příklad jak může být spuštěn:
+
+```python
+ rcc run --silent --task test_0001.robot
+```
+
+Výsledky testů jsou uloženy do složky report.
 
 ## Reportovací
+Součástí reportu je verze firmwaru, datum a čas spuštení testu.
 
-
+Soubory v pdf formátu nejsou automaticky tvořeny v rámci rcc prostředí, byly manuálně přidány pro ukázku, jak report vypadá. Nicméně z logů jednotlivých testů je možné vytvořit pdf report s výsledky všech testů, které byly v rámci testovací fáze spuštěny.
 
 ## Poznámky
 
-- Nebyly plně pokryty požadavky na bezpečnost (brute force prevention)
-- Nebyly plně pokryty požadavky na řízení ztráty připojení a opětovné připojení
+- Nebyly pokryty požadavky na bezpečnost (brute force prevention)
+- Nebyly pokryty požadavky na řízení ztráty připojení a opětovné připojení
