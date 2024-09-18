@@ -1,22 +1,21 @@
 *** Settings ***
-Documentation    Succesfull connection from login page into chat application, username and password valid
-Metadata         Requirements    https://github.com/eliskakucerova/iresoft/blob/main/docs/requirements.md#req_0006
+Documentation       Succesfull connection from login page into chat application, username and password valid
+Metadata            Requirements    https://github.com/eliskakucerova/iresoft/blob/main/docs/requirements.md#req_0006
 
-Library        SeleniumLibrary
-Library        BuiltIn
-Resource       ../resources/general/browser.resource 
-Resource       ../resources/setup/setup_teardown.resource
-Resource       ../resources/pages/login.resource
-Resource       ../resources/pages/public_chat.resource
-Variables      ../constants/urls.yaml
-Variables      ../constants/xpaths.yaml
-Variables      ../constants/defaults.yaml
+Library             SeleniumLibrary
+Library             BuiltIn
+Resource            general/browser.resource
+Resource            setup/setup_teardown.resource
+Resource            pages/login.resource
+Resource            pages/public_chat.resource
+Variables           urls.yaml
+Variables           xpaths.yaml
+Variables           defaults.yaml
 
-Test Setup          Generic test setup
-Test Teardown       Generic test teardown
 
 *** Tasks ***
 test_0007
+    [Tags]    login_page
     Browser OPEN in (Chrome) with (${HTTPS_URL})
     Sleep    5
     IS Login page (${LOGIN_URL}) location loaded correctly?
