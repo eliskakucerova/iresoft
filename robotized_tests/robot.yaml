@@ -23,3 +23,5 @@ tasks:
 
   test_0007:
     shell: robot tests\\__init__.robot tests\\test_0007.robot
+  test_0037:
+    shell: robot tests\\__init__.robot tests\\test_0037.robot
