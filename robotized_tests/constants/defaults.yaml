@@ -1,2 +1,5 @@
 VALID_USERNAME:  admin
 VALID_PASSWORD:  irechatadmin
+
+# TODO_IRE: Automated this process to minimize human error and reduce the likelihood of failures
+FW_VERSION:  3.01.02
