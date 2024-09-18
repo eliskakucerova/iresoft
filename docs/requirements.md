@@ -75,8 +75,7 @@ Tlačítko „Poslat“ ***musí*** být aktivní pouze tehdy, když je v textov
 
 
 #### REQ_0018
-Aplikace ***musí*** zobrazovat seznam uživatelů, se kterými osoba komunikovala
-
+Aplikace ***musí*** zobrazovat seznam uživatelů pro soukromou komunikaci.
 #### REQ_0019
 Aplikace ***musí*** umožnit uživatelům přidávat další uživatele do seznamu pro zahájení soukromé komunikace.
 
