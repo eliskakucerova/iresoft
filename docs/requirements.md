@@ -1,17 +1,17 @@
 # Obsah
 
-1. [Přístup a autentizace aplikace](#1-přístup-a-autentizace-aplikace)
-   - [Fáze tvorby účtu/prvního přihlášení](#fáze-tvorby-účtu-prvního-přihlášení)
-   - [Fáze přihlášení](#fáze-přihlášení)
-   - [Proces odhlášení](#proces-odhlášení)
-2. [Veřejný chat](#2-veřejný-chat)
-3. [Soukromý chat](#3-soukromý-chat)
-4. [Nastavení uživatele](#4-nastavení-uživatele)
-   - [Zálohování a obnovení profilu](#zálohování-a-obnovení-profilu)
+1. [Přístup a autentizace aplikace](##1-přístup-a-autentizace-aplikace)
+   - [Fáze tvorby účtu a prvního přihlášení](###fáze-tvorby-účtu-a-prvního-přihlášení)
+   - [Fáze přihlášení](###fáze-přihlášení)
+   - [Proces odhlášení](###proces-odhlášení)
+2. [Veřejný chat](##2-veřejný-chat)
+3. [Soukromý chat](##3-soukromý-chat)
+4. [Nastavení uživatele](##4-nastavení-uživatele)
+   - [Zálohování a obnovení profilu](###zálohování-a-obnovení-profilu)
 
 ## 1. Přístup a autentizace aplikace
 
-### Fáze tvorby účtu/prvního přihlášení
+### Fáze tvorby účtu aprvního přihlášení
 
 
 #### REQ_0001
@@ -27,7 +27,7 @@ Aplikace ***musí*** vyžadovat potvrzení hesla zadáním hesla podruhé během
 Aplikace ***musí*** zajistit, že hesla splňují základní pravidla zabezpečení a poskytne uživatelům informace o těchto pravidlech při prvním přihlášení.
 
 #### REQ_0005
-Pro úspěšnou registraci ***musí*** být vyplněna všechna pole registračního formuláře
+Pro úspěšnou registraci ***musí*** být vyplněna všechna pole registračního formuláře.
 
 ### Fáze přihlášení
 
@@ -80,7 +80,7 @@ Aplikace ***musí*** zobrazovat seznam uživatelů pro soukromou komunikaci.
 Aplikace ***musí*** umožnit uživatelům přidávat další uživatele do seznamu pro zahájení soukromé komunikace.
 
 #### REQ_0020
-Tlačítko „Přidat uživatele“ ***musí*** být aktivní v soukromém chatu pro přidání nového existujícího uživatele pro odesílání soukromých zpráv.
+Tlačítko „Přidat uživatele“ ***musí*** být aktivní v soukromém chatu pro přidání existujícího uživatele, se kterým nebyla soukromá konverzace zahájena, pro odesílání soukromých zpráv.
 
 #### REQ_0021
 Uživatelé ***musí*** mít možnost odebrat uživatele ze seznamu pro soukromou komunikaci.
@@ -125,13 +125,13 @@ Na stránce profilu ***musí*** být tlačítko „Uložit“, které bude aktiv
 Kliknutím na tlačítko „Uložit“ ***musí*** být všechny změny uloženy a uživatel ***musí*** být informován o úspěšném uložení změn.
 
 #### REQ_0034
-Tlačítko „Smazat změny“ (Discard Changes) ***musí*** být viditelné na stránce profilu a umožnit uživatelům zrušit neuložené změny. Po kliknutí na tlačítko „Smazat“ ***musí*** být všechny neuložené změny vráceny na poslední uložený stav.
+Tlačítko „Smazat změny“ (Discard Changes) ***musí*** být viditelné na stránce profilu a umožnit uživatelům zrušit neuložené změny. Po kliknutí na tlačítko „Smazat změny“ ***musí*** být všechny neuložené změny vráceny na poslední uložený stav.
 
 ### Zálohování a obnovení profilu
 
 
 #### REQ_0035
-Aplikace ***musí*** umožnit uživatelům se statusem Administrator vytvářet zálohy svých soukromých, veřejných chatových a profilových dat ve formátu JSON.
+Aplikace ***musí*** umožnit uživatelům se statusem administrator vytvářet zálohy svých soukromých, veřejných chatových a profilových dat ve formátu JSON.
 
 #### REQ_0036
 Záloha ***musí*** obsahovat soukromé a veřejné konverzace, profilová data a možnosti umístění zálohy (lokálně nebo v cloudu).
@@ -140,4 +140,4 @@ Záloha ***musí*** obsahovat soukromé a veřejné konverzace, profilová data 
 Uživatelé ***musí*** mít možnost obnovit data ze zálohy.
 
 #### REQ_0038
-Pokud je soubor zálohy poškozený nebo ve špatném formátu, aplikace ***musí*** zobrazit chybovou zprávu „Neplatný formát souboru zálohy“.
+Pokud je soubor zálohy poškozen nebo ve špatném formátu, aplikace ***musí*** zobrazit chybovou zprávu „Neplatný formát souboru zálohy“.
