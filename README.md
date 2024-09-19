@@ -40,7 +40,7 @@ Příklad jak může být spuštěn:
 
 Výsledky testů jsou uloženy do složky report.
 
-## Reportovací
+## Reportovací fáze
 Součástí reportu je verze firmwaru, datum a čas spuštení testu.
 
 Soubory v pdf formátu nejsou automaticky tvořeny v rámci rcc prostředí, byly manuálně přidány pro ukázku, jak report vypadá. Nicméně z logů jednotlivých testů je možné vytvořit pdf report s výsledky všech testů, které byly v rámci testovací fáze spuštěny.
