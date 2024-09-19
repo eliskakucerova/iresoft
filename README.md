@@ -15,14 +15,14 @@ Výsledkem by měl být:
 
 ## Přípravná fáze
 
-- Dokumentace, z dokumentace jsou následně zvořeny požadavky. Oba tyto dokumnety jsou tvořeny v markadownfilu
+- Dokumentace, z dokumentace jsou následně vytvořeny požadavky. Oba tyto dokumenty jsou tvořeny v markadown souboru
 
-- Požadavky, z požadavků jsou následně tvořeny testovací scénáře, pod testovacím snénářem prosím rozumějte test. Požadavky jsou do testovacích scénářů prolinkovány, takže je možné implementovat tracebility (schopnost sledovat pokrytí požadavku testu).
+- Požadavky, z požadavků jsou následně tvořeny testovací scénáře, pod testovacím scénářem prosím rozumějte test. Požadavky jsou do testovacích scénářů prolinkovány, takže je možné implementovat tracebility (schopnost sledovat pokrytí požadavku testu).
 
 
 - Efektivní pokrytí
     1. pozitivní -- validní data
-    2. negativní -- chybný vstup nebo neočekávané situaci
+    2. negativní -- chybný vstup nebo neočekávané situace
 
 Vemte prosím na vědomí, že pro tento úkol byla s ohledem na čas vytvořena pouze základní, obecná dokumnetace a požadavky, které plně neprokývají celý rozsah nároků na jednotlivé komponenty a funkčnost mezi nimi, stejně jako neočekávané situace.
 
@@ -41,7 +41,7 @@ Příklad jak může být spuštěn:
 Výsledky testů jsou uloženy do složky report.
 
 ## Reportovací fáze
-Součástí reportu je verze firmwaru, datum a čas spuštení testu.
+Součástí reportu je verze firmwaru, datum a čas spuštění testu.
 
 Soubory v pdf formátu nejsou automaticky tvořeny v rámci rcc prostředí, byly manuálně přidány pro ukázku, jak report vypadá. Nicméně z logů jednotlivých testů je možné vytvořit pdf report s výsledky všech testů, které byly v rámci testovací fáze spuštěny.
 
