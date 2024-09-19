@@ -1,13 +1,13 @@
 # Obsah
 
-1. [Přístup a autentizace aplikace](##1-přístup-a-autentizace-aplikace)
-   - [Fáze tvorby účtu a prvního přihlášení](###fáze-tvorby-účtu-a-prvního-přihlášení)
-   - [Fáze přihlášení](###fáze-přihlášení)
-   - [Proces odhlášení](###proces-odhlášení)
-2. [Veřejný chat](##2-veřejný-chat)
-3. [Soukromý chat](##3-soukromý-chat)
-4. [Nastavení uživatele](##4-nastavení-uživatele)
-   - [Zálohování a obnovení profilu](###zálohování-a-obnovení-profilu)
+1. [Přístup a autentizace aplikace](#1-přístup-a-autentizace-aplikace)
+   - [Fáze tvorby účtu a prvního přihlášení](#fáze-tvorby-účtu-a-prvního-přihlášení)
+   - [Fáze přihlášení](#fáze-přihlášení)
+   - [Proces odhlášení](#proces-odhlášení)
+2. [Veřejný chat](#2-veřejný-chat)
+3. [Soukromý chat](#3-soukromý-chat)
+4. [Nastavení uživatele](#4-nastavení-uživatele)
+   - [Zálohování a obnovení profilu](#zálohování-a-obnovení-profilu)
 
 ## 1. Přístup a autentizace aplikace
 
