@@ -11,7 +11,7 @@
 ---
 
 ## Úvod
-Tato aplikace je chatovací platforma, která umožňuje uživatelům přihlašování, komunikaci ve skupinových i soukromých chatovacích místnostech a personalizaci uživatelského účtu. Tato dokumentace popisuje jednotlivé funkcionality aplikace. Po zadání adresy aplikace se zobrazí pouze přihlašovací stránka aplikace bez možnosti zobrazení profilu nebo jakéhokoliv chatu.
+Tato aplikace je chatovací platforma, která umožňuje uživatelům přihlašování, komunikaci ve skupinových i soukromých chatovacích místnostech a personalizaci uživatelského účtu. Tato dokumentace popisuje jednotlivé funkcionality aplikace. Po zadání adresy aplikace se zobrazí pouze přihlašovací stránka aplikace bez možnosti zobrazení profilu nebo jakéhokoli chatu.
 
 ---
 
@@ -42,7 +42,7 @@ Tato sekce se zabývá tvorbou účtu, přihlašováním, odhlašováním a proc
 
 ### Manipulace s heslem
 - **Pravidla pro hesla:** Heslo musí splňovat základní bezpečnostní pravidla, která jsou zobrazena při prvním přihlášení.
-- **Brute force prevence:** Po pěti chybných pokusech o přihlášení během jedné minuty je uživateli na minutu zablokován další pokus.
+- **Brute force prevence:** Po pěti chybných pokusech o přihlášení během jedné minuty je uživateli na jednu minutu zablokován další pokus.
 - **Změna hesla:** Uživatel může změnit heslo v nastavení profilu, přičemž musí opětovně zadat nové heslo pro potvrzení. Změněné heslo musí splňovat základní bezpečnostní pravidla pro tvorbu hesla.
 
 ---
@@ -123,7 +123,7 @@ Tato sekce se zabývá tvorbou účtu, přihlašováním, odhlašováním a proc
 #### Obnovení zálohy
 - **Nahrání zálohy:** Administrátor může vybrat soubor zálohy ve formátu JSON.
 - **Sloučení nebo přepsání dat:** Uživatel může zvolit, zda se data sloučí nebo přepíší.
-- **Zpracování chyb:** Pokud je záloha poškozená nebo ve špatném formátu, zobrazí se chybová zpráva.
+- **Zpracování chyb:** Pokud je záloha poškozena nebo ve špatném formátu, zobrazí se chybová zpráva.
 - **Potvrzení:** Po úspěšném obnovení aplikace informuje uživatele, že data byla obnovena.
 
 ---
